@@ -74,3 +74,29 @@ export function middleware(request: NextRequest) {
   // Your middleware logic here
 }
 ```
+
+Middleware can get really complex though so don't worry if you don't understand it right away.
+ただし、ミドルウェアは非常に複雑になる可能性があるため、すぐに理解できなくても心配しないでください。
+
+Middleware has 2 params:
+
+- request: The request object
+- event: The event object
+
+Next.js extends the Request object with NextRequest and the Response object with NextResponse. This gives you more options to meddle with the request and response.
+Next.js は、Request オブジェクトを NextRequest で拡張し、Response オブジェクトを NextResponse で拡張します。これにより、リクエストとレスポンスを操作するためのオプションが増えます。
+
+I'm not a big fan of this feature. Why? Because, when you try to look up docs for this, the docs are not that robust and you'll find yourself reading through the source code to figure out how to do something.
+私はこの機能があまり好きではありません。なぜでしょうか? この機能に関するドキュメントを調べようとすると、ドキュメントがそれほど充実しておらず、何かを実行する方法を理解するためにソース コードを読み通す必要があるからです。
+
+And an API design should be intuitive and easy to understand. Try to follow web standards and keep your API as close to web standards as possible.
+また、API 設計は直感的で理解しやすいものでなければなりません。Web 標準に従い、API をできるだけ Web 標準に近づけるようにしてください。
+
+On top of this, Next.js team now has to maintain 2 sets of APIs:
+これに加えて、Next.js チームは次の 2 セットの API を保守する必要があります。
+
+NextRequest and NextResponse and if there are any changes in underlying API's, it has become their job to communicate to us.
+NextRequest と NextResponse は、基盤となる API に変更があった場合に、私たちに通知する役割を担っています。
+
+Anyway, that middleware is still very powerful just like we'll see in the Authy system.
+いずれにせよ、そのミドルウェアは、Authy システムで見られるように、依然として非常に強力です。
