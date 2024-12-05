@@ -90,3 +90,13 @@ This route will match URLs like:
 
 - /blog/tech/nextjs/routing
 - /blog/lifestyle/travel/europe/france
+
+
+## When to Use Each
+- Use Dynamic Routes when you have a single, predictable dynamic segment.
+- Use Catch-all Routes when you need to handle multiple levels of hierarchy or unknown depth.
+
+## Key Takeaways
+- Dynamic routes are simpler and work well for single-segment variables.
+- Catch-all routes offer more flexibility for complex hierarchies.
+- Choose based on your URL structure and the level of flexibility you need.
