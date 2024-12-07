@@ -1,5 +1,5 @@
-import AuthPanel from "@/components/ui/auth-panel";
-import LoginForm from "@/components/ui/login-form";
+import AuthPanel from "@/components/auth-panel";
+import { LoginForm } from "@/components/login-form";
 
 export default function Login() {
     return <div className="min-h-screen">
